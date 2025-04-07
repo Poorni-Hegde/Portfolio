@@ -1,1 +1,1 @@
-# Portfolio
+This portfolio project is a sleek and modern web application designed to showcase professional skills, achievements, and projects in a visually engaging format. Featuring a black and cyan color theme, the design emphasizes a futuristic yet professional look
