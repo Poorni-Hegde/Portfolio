@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poornima Hegde</title>
+
+    <!-- box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- custom css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Poornima Hegde</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Experienced Software Test Engineer with 1.6 years in software testing and quality assurance, specializing in automated testingmethodologies. Proficient in designing and executing comprehensive test plans, developing automation scripts using Selenium, andconducting performance tests with JMeter to ensure optimal system performance under load. Skilled in tracking and resolving defectsusing JIRA, with a solid understanding of SDLC and expertise in API, user acceptance, and database testing. Known for a detail-orientedapproach, strong analytical skills, and commitment to delivering reliable, high-quality software solutions.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/poornima-hegde1804" target="_blank" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://www.facebook.com/poornima.hegde7549" target="_blank" title="Facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/_.poorna._hegde._?igsh=MWZ0bHQ1dDUxNW92OQ==" target="_blank" title="Instagram"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="https://github.com/Poorni-Hegde" target="_blank" title="GitHub"><i class="bx bxl-github"></i></a>
+            </div>
+            <!--<a href="#" class="btn">Download Resume</a>-->
+            <a href="PoornimaHegde(Resume).pdf" class="btn" download>Download Resume</a>
+        </div>
+
+        <div class="home-img"> 
+            <img src="Images/Poornima_Img.png" alt="">
+            
+        </div>
+    </section>
+
+    <!-- About Section Design -->
+     <section class="about" id="about">
+        <div class="about-img">
+            <img src="Images/Poornima_Img.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Software Tester</h3>
+            <p>
+                Experienced Software Test Engineer with 1.6 years in software testing...
+            </p>
+            <a href="#" class="btn" onclick="openModal()">Read More</a>
+        </div>
+        
+        <!-- Modal Structure -->
+        <div id="aboutModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h2>About Me</h2>
+                <p>
+                    Experienced Software Test Engineer with 1.6 years in software testing and quality assurance, specializing in automated testingmethodologies. Proficient in designing and executing comprehensive test plans, developing automation scripts using Selenium, andconducting performance tests with JMeter to ensure optimal system performance under load. Skilled in tracking and resolving defectsusing JIRA, with a solid understanding of SDLC and expertise in API, user acceptance, and database testing. Known for a detail-orientedapproach, strong analytical skills, and commitment to delivering reliable, high-quality software solutions.
+
+                </p>
+            </div>
+        </div>
+        
+
+        <script>
+            function openModal() {
+                document.getElementById("aboutModal").style.display = "block";
+            }
+        
+            function closeModal() {
+                document.getElementById("aboutModal").style.display = "none";
+            }
+        
+            // Close modal when clicking outside content
+            window.onclick = function(event) {
+                const modal = document.getElementById("aboutModal");
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+     </section>
+     
+
+     <!-- Service Section Design -->
+      <section class="services" id="services">
+        <h2 class="heading">Our <span> Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="bx bx-bug"></i>
+                <h3>Software Testing</h3>
+                <p>Our comprehensive software testing services ensure your product is robust, reliable, and ready for deployment</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        
+            <div class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Development</h3>
+                <p>We offer end-to-end web development solutions designed to deliver seamless user experiences and scalable applications.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="bx bx-line-chart"></i>
+                <h3>Digital Marketing</h3>
+                <p>Boost your online presence and drive growth with our tailored digital marketing strategies.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+       </div>
+
+      </section>
+
+    <!-- Portfolio Section Design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span> Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="Images/Quiz App.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Quizz App</h4>
+                    <p>It is a basic Quiz-App created using HTML,CSS and React JS</p>
+                    <a href="https://github.com/Poorni-Hegde/Quiz-App" target="_blank" class="github-link"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="Images/StopWatch-2.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Stop Watch</h4>
+                    <p>It is a basic Stop-Watch created using HTML,CSS and JavaScript</p>
+                    <a href="https://github.com/Poorni-Hegde/Stop-Watch" target="_blank" class="github-link"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="Images/Basic Selenium.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Basic Selenium Programming</h4>
+                    <p>This is the project for the one who started to learn a python with selenium in early stage. This contains some basic codes for login, web tables, web links, web elements and few more.</p>
+                    <a href="https://github.com/Poorni-Hegde/Basic-Selenium-with-Python" target="_blank" class="github-link"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>   
+            
+            <div class="portfolio-box">
+                <img src="Images/Hotstar Analysis.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Hotstar Analysis</h4>
+                    <p>Basic Data Analysis project using only Python</p>
+                    <a href="https://github.com/Poorni-Hegde/Hotstar_Analysis" target="_blank" class="github-link"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>   
+
+            <div class="portfolio-box">
+                <img src="Images/Portfolio.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Portfolio</h4>
+                    <p>This portfolio project is a sleek and modern web application designed to showcase professional skills, achievements, and projects in a visually engaging format. Featuring a black and cyan color theme, the design emphasizes a futuristic yet professional look</p>
+                    <a href="https://github.com/Poorni-Hegde/Portfolio" target="_blank" class="github-link"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>   
+        </div>
+
+     </section>
+
+
+    <!-- Contact Section Design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span> Me</span></h2>
+
+        <form action="mailto:poornimah1809@gmail.com" method="post" enctype="text/plain">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+            
+        </form>
+
+    </section>
+
+    <!-- Footer Design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p> Copyright &copy; 2025 by Poornima Hegde | All Rights Reserved</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bxs-home-heart'></i></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>-->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+</body>
+</html>
